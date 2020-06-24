@@ -19,7 +19,7 @@ class Cattle:
 
     def get_weight(self):
         print(f'Вес животного {self.name} - {self.weight} кг')
-        return (self.weight)
+        return self.weight
 
     def feed(self):
         self.satiety = True
@@ -60,7 +60,7 @@ class Sheep(Cattle):
     voice = 'Bleat!'
 
     def wool_cut(self):
-        self.wool_cut = 0
+        self.wool_amount = 0
         print(f'Животное {self.name} поcтрижено')
 
     def get_voice(self):
@@ -117,6 +117,7 @@ def total_weight():
 
 def heaviest_weight():
     heaviest_weight = 0
+    # heaviest_name = None
     for every_cattle in cattle_list:
         if heaviest_weight < list(every_cattle.values())[0]:
             heaviest_weight = list(every_cattle.values())[0]
