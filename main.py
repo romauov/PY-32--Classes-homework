@@ -151,3 +151,33 @@ sheep_curly.get_weight()
 chicken_coco.get_name()
 
 print(cattle_list)
+
+# class Animal:
+#     pass
+# class Cow(Animal):
+#     cattle_data = None
+#     def __init__(self, name, weight):
+#         self.name = name
+#         self.weight = weight
+#     def set_cattle_data(self, var_name):
+#         self.cattle_data = {var_name : [self.name, self.weight]}
+# class Sheep(Animal):
+#     cattle_data = None
+#     def __init__(self, name, weight):
+#         self.name = name
+#         self.weight = weight
+#     def set_cattle_data(self, var_name):
+#         self.cattle_data = {var_name : [self.name, self.weight]}
+# def get_var_str_name(locals_obj, var_object):
+#     return [k for k, v in locals_obj.items() if v == var_object][0]
+# animal_1 = Cow('животное 1', 10)
+# animal_1.set_cattle_data(get_var_str_name(locals(), animal_1))
+# animal_3 = Cow('животное 2', 11)
+# animal_3.set_cattle_data(get_var_str_name(locals(), animal_3))
+# animal_4 = Sheep('животное 3', 12)
+# animal_4.set_cattle_data(get_var_str_name(locals(), animal_4))
+# animal_5 = Sheep('животное 4', 13)
+# animal_5.set_cattle_data(get_var_str_name(locals(), animal_5))
+# animals_list = [animal_1, animal_3, animal_4, animal_5]
+# for animal in animals_list:
+#     print(animal.cattle_data)
